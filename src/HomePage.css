@@ -1,0 +1,75 @@
+/* Style the form container */
+.banner {
+    position: relative;
+    max-width: 530px;
+    margin: auto;
+    padding-top: 76px;
+  }
+  
+  .banner img {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .banner img:first-child {
+    z-index: 1;
+  }
+  .banner img:last-child {
+    border-radius: 30px;
+  }
+  
+  .form-container {
+      padding: 100px;
+      background-color: #f2f2f2;
+      max-width: 500px;
+      margin: auto;
+      margin-top: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    /* Style the input fields */
+    input[type=text], select {
+      width: 48%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    #country-code {
+      width: 30%;
+    }
+    
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    /* Style the submit button on hover */
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Responsive layout - makes the form container stack on top of each other */
+    @media (max-width: 600px) {
+      .form-container {
+        max-width: 100%;
+      }
+      .banner {
+        max-width: 100%;
+      }
+      .rewards-text {
+        max-width: 100%;
+      }
+    }
+    
